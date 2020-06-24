@@ -19,6 +19,7 @@ import java.util.Map;
 import io.epirus.console.account.AccountCommand;
 import io.epirus.console.account.subcommands.LoginCommand;
 import io.epirus.console.account.subcommands.LogoutCommand;
+import io.epirus.console.config.ConfigCommand;
 import io.epirus.console.config.ConfigManager;
 import io.epirus.console.deploy.DeployCommand;
 import io.epirus.console.docker.DockerCommand;
@@ -58,7 +59,8 @@ import static org.web3j.codegen.Console.exitSuccess;
             LogoutCommand.class,
             ProjectTestCommand.class,
             UnitTestCommand.class,
-            DeployCommand.class
+            DeployCommand.class,
+            ConfigCommand.class
         },
         showDefaultValues = true,
         abbreviateSynopsis = true,
